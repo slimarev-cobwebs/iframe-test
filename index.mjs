@@ -1,5 +1,10 @@
 window.addEventListener('message', (e) => {
      msg = e.data || "";
+     
+     if (typeof message != "string) {
+          return;
+     }
+     
      lastIndex = msg.lastIndexOf(",");
      key = msg.substring(0, lastIndex);
      product = msg.substring(lastIndex + 1);
