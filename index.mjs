@@ -1,7 +1,7 @@
 window.addEventListener('message', (e) => {
      msg = e.data;
      
-     if (!msg) {
+     if (typeof msg !== "string") {
           return;
      }
      
