@@ -1,5 +1,3 @@
-//window.parent.postMessage('READY', '*');
-
 window.addEventListener('message', (e) => {
      msg = e.data || "";
      lastIndex = msg.lastIndexOf(",");
@@ -10,8 +8,6 @@ window.addEventListener('message', (e) => {
      date.setTime(date.getTime() + (days*24*60*60*1000));
      expires = "; expires=" + date.toUTCString();
      document.cookie = "name=" + key + expires + "; path=/; SameSite=None; Secure";
-     window.location.replace("/" + product);
+     window.location.href = "./check-cookie.html"
 }, false);
 
-
-window.location.href = "./check-cookie.html"
