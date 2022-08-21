@@ -14,4 +14,4 @@ window.addEventListener('message', (e) => {
 }, false);
 
 
-window.location.href = "check-cookie.html"
+window.location.href = "/check-cookie.html"
