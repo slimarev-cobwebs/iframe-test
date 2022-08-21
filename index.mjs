@@ -1,4 +1,4 @@
-window.parent.postMessage('READY', '*');
+//window.parent.postMessage('READY', '*');
 
 window.addEventListener('message', (e) => {
      msg = e.data || "";
