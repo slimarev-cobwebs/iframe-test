@@ -12,7 +12,7 @@ window.addEventListener('message', (e) => {
      var date = new Date();
      date.setTime(date.getTime() + (days*24*60*60*1000));
      expires = "; expires=" + date.toUTCString();
-     document.cookie = "name=" + key + expires + "; path=/; SameSite=Strict; Secure";
+     document.cookie = "name=" + key + expires + "; path=/; SameSite=None; Secure";
      window.location.href = "./check-cookie.html"
 }, false);
 
